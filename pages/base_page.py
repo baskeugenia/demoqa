@@ -17,3 +17,15 @@ class BasePage:
 
     def equal_url(self):
         return self.get_url() == self.base_url
+
+    def back(self):
+        self.driver.back()
+
+    def forward(self):
+        self.driver.forward()
+
+    def refresh(self):
+        self.driver.refresh()
+
+    def get_title(self):
+        self.driver.title

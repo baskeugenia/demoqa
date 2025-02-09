@@ -8,3 +8,6 @@ class ElementsPage(BasePage):
         self.base_url = 'https://demoqa.com/elements'
         super().__init__(driver, self.base_url)
         self.div_elem = WebElement(driver, '#app > div > div > div > div.col-12.mt-4.col-md-6')
+        self.icon = WebElement(driver, '#app > header > a > img')
+        self.btn_sidebar_first = WebElement(driver, 'div:nth-child(1) > span > div')
+        self.btn_sidebar_first_textbox = WebElement(driver, '#item-0 > span')
