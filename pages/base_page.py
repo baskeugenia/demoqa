@@ -28,4 +28,4 @@ class BasePage:
         self.driver.refresh()
 
     def get_title(self):
-        self.driver.title
+        return self.driver.title
