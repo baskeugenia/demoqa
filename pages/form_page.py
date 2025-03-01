@@ -19,3 +19,6 @@ class FormPage(BasePage):
         self.hobbies = WebElement(driver, '#hobbies-checkbox-1')
         self.current_address = WebElement(driver, '#currentAddress')
         self.form = WebElement(driver, '#userForm')
+        self.btn_state = WebElement(driver, '#state')
+        self.input_state = WebElement(driver, '#react-select-3-input')
+        self.btn_NCR = WebElement('//*[contains(text(), "NCR")]', 'xpath')
