@@ -56,18 +56,4 @@ def add_row(wp, i):
 
     assert not wp.modal_form.exist()
 
-    # wp.btn_edit_4.click()
-    # time.sleep(2)
-    # new_name = 'NEWNAME'
-    # wp.first_name.send_keys(Keys.CONTROL+'a')
-    # wp.first_name.send_keys(Keys.DELETE)
-    # wp.first_name.send_keys(new_name)
-    # time.sleep(2)
-    # wp.btn_submit.click()
-    # time.sleep(2)
-    #
-    # assert wp.cell_first_name_4.get_text() == new_name
-    #
-    # wp.btn_delete_4.click()
-    # assert wp.cell_first_name_4.get_text() == ' '
 
