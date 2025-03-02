@@ -1,6 +1,7 @@
 import time
 from pages.text_box_page import TextBoxPage
 
+
 def test_placeholder(browser):
     tbp = TextBoxPage(browser)
     tbp.visit()
