@@ -31,7 +31,17 @@ class WebtablesPage(BasePage):
                                             )
         
         self.btn_select_size = WebElement(driver,
-                                        '//*[@id="app"]/div/div/div/div[2]/div[2]/div[3]/div[2]/div/div[2]/span[2]/select',
-                                        'xpath'
-                                      )
+                                          '//*[@id="app"]/div/div/div/div[2]/div[2]/div[3]/div[2]/div/div[2]/span[2]/select',
+                                          'xpath'
+                                          )
 
+        self.email = WebElement(driver,
+                                '/html/body/div[2]/div/div/div/div[2]/div[2]/div[3]/div[1]/div[1]/div/div[4]/div[1]',
+                                'xpath'
+                                )
+        self.sort_asc_by_email = WebElement(driver,
+                                        '#app > div > div > div > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.rt-table > div.rt-thead.-header > div > div.rt-th.rt-resizable-header.-sort-asc.-cursor-pointer',
+                                        )
+        self.sort_desc_by_email = WebElement(driver,
+                                        '#app > div > div > div > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.rt-table > div.rt-thead.-header > div > div.rt-th.rt-resizable-header.-sort-desc.-cursor-pointer',
+                                        )
